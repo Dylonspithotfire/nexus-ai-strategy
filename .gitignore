@@ -1,0 +1,6 @@
+# Node & OS
+node_modules/
+.DS_Store
+*.log
+.system_generated/
+._*
