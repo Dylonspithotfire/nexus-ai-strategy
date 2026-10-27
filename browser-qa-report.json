@@ -1,0 +1,369 @@
+{
+  "timestamp": "2026-10-27T09:13:50.063Z",
+  "desktop": {
+    "desktopNavVisible": true,
+    "navLinksCount": 8,
+    "navLinks": [
+      {
+        "href": "#fit",
+        "text": "Who It's For"
+      },
+      {
+        "href": "#problem",
+        "text": "The Problem"
+      },
+      {
+        "href": "#services",
+        "text": "Services"
+      },
+      {
+        "href": "#process",
+        "text": "Process"
+      },
+      {
+        "href": "#quiz",
+        "text": "Readiness Quiz"
+      },
+      {
+        "href": "#estimator",
+        "text": "ROI Tool"
+      },
+      {
+        "href": "#about",
+        "text": "About"
+      },
+      {
+        "href": "#faq",
+        "text": "FAQ"
+      }
+    ],
+    "mobileToggleHiddenOnDesktop": true,
+    "servicesGridColumns": "365.328px 365.328px 365.344px",
+    "serviceCardsCount": 3,
+    "serviceCards": [
+      {
+        "id": "service-audit",
+        "isPrimary": true,
+        "title": "AI Readiness Audit",
+        "priceAmount": "3,500",
+        "ctaId": "service-audit-cta"
+      },
+      {
+        "id": "service-implementation",
+        "isPrimary": false,
+        "title": "Agent Implementation",
+        "priceAmount": "15,000",
+        "ctaId": "service-implementation-cta"
+      },
+      {
+        "id": "service-retainer",
+        "isPrimary": false,
+        "title": "Strategic Retainer",
+        "priceAmount": "4,000",
+        "ctaId": "service-retainer-cta"
+      }
+    ],
+    "proofBarItemsCount": 4,
+    "proofItems": [
+      {
+        "number": "100%",
+        "label": "Solo Principal-LedZero junior contractors"
+      },
+      {
+        "number": "10 Days",
+        "label": "Audit TurnaroundFixed scope & deliverables"
+      },
+      {
+        "number": "Zero",
+        "label": "Vendor KickbacksStrictly vendor-agnostic"
+      },
+      {
+        "number": "Legacy",
+        "label": "Stack CompatibleMcLeod, TMW, SQL, AS400"
+      }
+    ],
+    "footerNavColsCount": 3,
+    "copyrightPresent": true,
+    "copyrightText": "© 2026 Nexus AI Strategy. All rights reserved. Zero vendor commissions. 100% independent advisory."
+  },
+  "ctaClicks": {
+    "nav-book-btn": {
+      "id": "nav-book-btn",
+      "name": "Header Nav Book Audit CTA",
+      "found": true,
+      "href": "#contact",
+      "targetExists": true,
+      "expectedScrollTop": 9019,
+      "targetMatchesExpected": true
+    },
+    "hero-book-audit-btn": {
+      "id": "hero-book-audit-btn",
+      "name": "Hero Primary Book Audit CTA",
+      "found": true,
+      "href": "#contact",
+      "targetExists": true,
+      "expectedScrollTop": 9019,
+      "targetMatchesExpected": true
+    },
+    "hero-take-quiz-btn": {
+      "id": "hero-take-quiz-btn",
+      "name": "Hero Secondary Take Quiz CTA",
+      "found": true,
+      "href": "#quiz",
+      "targetExists": true,
+      "expectedScrollTop": 4945,
+      "targetMatchesExpected": true
+    },
+    "service-audit-cta": {
+      "id": "service-audit-cta",
+      "name": "Service 1 Audit CTA",
+      "found": true,
+      "href": "#contact",
+      "targetExists": true,
+      "expectedScrollTop": 9019,
+      "targetMatchesExpected": true
+    },
+    "service-implementation-cta": {
+      "id": "service-implementation-cta",
+      "name": "Service 2 Implementation CTA",
+      "found": true,
+      "href": "#contact",
+      "targetExists": true,
+      "expectedScrollTop": 9019,
+      "targetMatchesExpected": true
+    },
+    "service-retainer-cta": {
+      "id": "service-retainer-cta",
+      "name": "Service 3 Retainer CTA",
+      "found": true,
+      "href": "#contact",
+      "targetExists": true,
+      "expectedScrollTop": 9019,
+      "targetMatchesExpected": true
+    },
+    "mobile-book-audit-link": {
+      "name": "Mobile Drawer Book Audit Link",
+      "targetSection": "contact",
+      "drawerClosedAfterClick": true,
+      "toggleAriaExpandedAfterClick": true,
+      "bodyOverflowUnlocked": true,
+      "href": "#contact",
+      "targetMatchesExpected": true
+    },
+    "mobile-toggle-btn": {
+      "name": "Mobile Hamburger Toggle",
+      "worksCorrectly": true
+    }
+  },
+  "quiz": {
+    "initialSlideActive": "1",
+    "prevWorked": true,
+    "resultCardVisible": true,
+    "targetAgent": "Carrier Rate & Invoice Reconciliation Agent",
+    "disclaimerPresent": true,
+    "transferCheck": {
+      "bottleneckVal": "carrier-invoicing",
+      "msgHasIntakeContext": true
+    }
+  },
+  "estimator": {
+    "hValue": "40",
+    "rValue": "50",
+    "cValue": "75",
+    "annualSavingsDisplay": "$78,000",
+    "weeklyHoursSavedDisplay": "30.0 hrs",
+    "annualHoursSavedDisplay": "1,560 hrs",
+    "formulaDetailDisplay": "30.0 hrs saved/wk × $50/hr × 52 weeks",
+    "isMathematicallyAccurate": true
+  },
+  "contactForm": {
+    "emptyValidationWorked": true,
+    "isConfirmedVisible": true,
+    "isFormHidden": true,
+    "confirmedName": "Marcus Sterling",
+    "confirmedCompany": "Apex Freight Networks LLC",
+    "confirmedEmail": "msterling@apexfreight.com",
+    "confirmedSize": "$25M–$50M Revenue (100–200 employees)",
+    "confirmedBottleneck": "Carrier Rate & Invoice Reconciliation Leakage",
+    "dataMatchesInput": true
+  },
+  "mobile": {
+    "viewportWidth": 390,
+    "documentScrollWidth": 390,
+    "hasHorizontalOverflow": false,
+    "toggleTouchTarget": {
+      "width": 44,
+      "height": 44,
+      "meets44px": true
+    },
+    "initExpanded": "false",
+    "initHidden": true,
+    "openedExpanded": "true",
+    "openedHidden": false,
+    "bodyOverflowLocked": true,
+    "linkTouchTargetsCount": 9,
+    "allLinksMeet44px": true,
+    "linkTouchTargets": [
+      {
+        "text": "Who It's For",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "The Problem",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "Services & Pricing",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "4-Step Process",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "5-Question Quiz",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "ROI Estimator",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "About Marcus",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "FAQ",
+        "width": 350,
+        "height": 55,
+        "meets44px": true
+      },
+      {
+        "text": "Book the Audit ($3,500)",
+        "width": 350,
+        "height": 50,
+        "meets44px": true
+      }
+    ]
+  },
+  "tablet": {
+    "viewportWidth": 768,
+    "documentScrollWidth": 753,
+    "hasHorizontalOverflow": false,
+    "processStepsCount": 4,
+    "processSteps": [
+      {
+        "width": 713
+      },
+      {
+        "width": 713
+      },
+      {
+        "width": 713
+      },
+      {
+        "width": 713
+      }
+    ],
+    "serviceCardsCount": 3,
+    "serviceCards": [
+      {
+        "title": "AI Readiness Audit",
+        "width": 713,
+        "height": 573
+      },
+      {
+        "title": "Agent Implementation",
+        "width": 713,
+        "height": 624
+      },
+      {
+        "title": "Strategic Retainer",
+        "width": 713,
+        "height": 571
+      }
+    ],
+    "proofBarWidth": 713
+  },
+  "grayscale": {
+    "isGrayscaleApplied": true,
+    "contrastRatios": {
+      "headlineOnWhite": 15.63,
+      "whiteTextOnCopperButton": 11.73,
+      "copperButtonAgainstWhiteBackground": 11.73,
+      "whiteTextOnNavyButton": 15.63,
+      "badgeTextAgainstBadgeBg": 15.63
+    },
+    "visualHierarchyPreserved": {
+      "primaryCardHasAccentBorder": true,
+      "copperButtonStandsOutFromWhite": true,
+      "textRemainsHighContrast": true
+    }
+  },
+  "screenshots": {
+    "hero": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-hero.png",
+    "services": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-services.png",
+    "quizResult": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-quiz-result.png",
+    "confirmation": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-confirmation.png",
+    "mobileHero": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-mobile.png",
+    "mobileMenu": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-mobile-menu.png",
+    "tablet": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-tablet.png",
+    "grayscale": "/Volumes/Extreme SSD/Google AntiGravity/nexus-ai-strategy/screenshot-grayscale.png"
+  },
+  "copiedBrainScreenshots": [
+    {
+      "file": "screenshot-hero.png",
+      "size": 279860,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-hero.png"
+    },
+    {
+      "file": "screenshot-services.png",
+      "size": 382068,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-services.png"
+    },
+    {
+      "file": "screenshot-quiz-result.png",
+      "size": 293673,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-quiz-result.png"
+    },
+    {
+      "file": "screenshot-mobile.png",
+      "size": 186259,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-mobile.png"
+    },
+    {
+      "file": "screenshot-mobile-menu.png",
+      "size": 74731,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-mobile-menu.png"
+    },
+    {
+      "file": "screenshot-tablet.png",
+      "size": 280749,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-tablet.png"
+    },
+    {
+      "file": "screenshot-confirmation.png",
+      "size": 233099,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-confirmation.png"
+    },
+    {
+      "file": "screenshot-grayscale.png",
+      "size": 242232,
+      "dest": "/Users/dylonspithotfire/.gemini/antigravity/brain/152dbaef-e4d8-48f7-9b03-e75099d59c34/screenshot-grayscale.png"
+    }
+  ]
+}

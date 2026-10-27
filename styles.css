@@ -23,7 +23,7 @@
   --color-slate: #5A6B7F;
   --color-slate-light: #7E8F9F;
   --color-slate-dark: #374657;
-  --color-slate-muted: #8E9BA8;
+  --color-slate-muted: #4A5B6E;
 
   --color-paper: #F6F4EF;
   --color-paper-light: #FAF9F6;
@@ -32,7 +32,8 @@
 
   --color-copper: #C98A2E;
   --color-copper-hover: #B47822;
-  --color-copper-dark: #986518;
+  --color-copper-dark: #8C5708;
+  --color-copper-text: #8C5708;
   --color-copper-light: rgba(201, 138, 46, 0.08);
   --color-copper-border: rgba(201, 138, 46, 0.35);
 
@@ -130,6 +131,30 @@ img, svg {
   outline-offset: 3px;
 }
 
+/* SKIP LINK FOR ACCESSIBILITY */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1.25rem;
+  background-color: var(--color-navy);
+  color: #FFFFFF;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  transition: top 0.15s ease;
+  border: 2px solid var(--color-copper);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+  outline: 3px solid var(--color-copper);
+  outline-offset: 2px;
+}
+
 /* LAYOUT CONTAINERS */
 .container {
   width: 100%;
@@ -164,7 +189,7 @@ img, svg {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-copper);
+  color: var(--color-copper-dark);
   background-color: var(--color-copper-light);
   border: 1px solid var(--color-copper-border);
   padding: 0.25rem 0.75rem;
@@ -206,15 +231,28 @@ img, svg {
 
 .btn-copper {
   background-color: var(--color-copper);
-  color: #FFFFFF;
-  border-color: var(--color-copper-hover);
-  box-shadow: 0 2px 6px rgba(201, 138, 46, 0.25);
+  color: var(--color-navy-dark);
+  border-color: #B47822;
+  box-shadow: 0 2px 6px rgba(201, 138, 46, 0.28);
+  font-weight: 700;
 }
 
 .btn-copper:hover {
-  background-color: var(--color-copper-hover);
-  color: #FFFFFF;
-  box-shadow: 0 4px 12px rgba(201, 138, 46, 0.35);
+  background-color: #D99738;
+  color: var(--color-navy-dark);
+  border-color: var(--color-copper);
+  box-shadow: 0 4px 14px rgba(201, 138, 46, 0.38);
+}
+
+.btn-copper:focus-visible {
+  outline: 3px solid var(--color-navy-dark);
+  outline-offset: 3px;
+}
+
+.btn-copper .btn-subtext {
+  color: var(--color-navy);
+  opacity: 0.95;
+  font-weight: 600;
 }
 
 .btn-navy {
@@ -244,12 +282,13 @@ img, svg {
 .btn-outline {
   background-color: transparent;
   color: var(--color-slate-dark);
-  border-color: var(--color-border-dark);
+  border: 1.5px solid var(--color-border-dark);
 }
 
 .btn-outline:hover:not(:disabled) {
   background-color: var(--color-paper-alt);
   color: var(--color-navy);
+  border-color: var(--color-slate-dark);
 }
 
 .btn-sm {
@@ -542,7 +581,7 @@ img, svg {
 }
 
 .hero-headline-sub {
-  color: var(--color-copper);
+  color: var(--color-copper-dark);
   display: inline-block;
 }
 
@@ -736,7 +775,7 @@ img, svg {
   font-family: var(--font-heading);
   font-size: 1.85rem;
   font-weight: 800;
-  color: var(--color-copper);
+  color: var(--color-copper-dark);
   line-height: 1;
   margin-bottom: 0.75rem;
 }
@@ -818,16 +857,17 @@ img, svg {
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--color-copper);
-  color: #FFFFFF;
+  color: var(--color-navy-dark);
   font-family: var(--font-body);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.3rem 0.95rem;
+  padding: 0.35rem 0.95rem;
   border-radius: var(--radius-pill);
   box-shadow: 0 2px 6px rgba(201, 138, 46, 0.35);
   white-space: nowrap;
+  border: 1px solid rgba(10, 23, 40, 0.2);
 }
 
 .service-header {
@@ -915,7 +955,7 @@ img, svg {
   left: 0;
   top: 1px;
   font-size: 0.72rem;
-  color: var(--color-copper);
+  color: var(--color-copper-dark);
 }
 
 .service-footer {
@@ -924,7 +964,8 @@ img, svg {
 
 .service-guarantee-note {
   font-size: 0.78rem;
-  color: var(--color-slate-muted);
+  font-weight: 500;
+  color: var(--color-text-muted);
   text-align: center;
   margin-top: 0.85rem;
   line-height: 1.4;
@@ -995,7 +1036,7 @@ img, svg {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-copper);
+  color: var(--color-copper-dark);
   margin-bottom: 0.35rem;
 }
 
@@ -1062,7 +1103,8 @@ img, svg {
 }
 
 .quiz-pct-text {
-  color: var(--color-copper);
+  color: var(--color-copper-dark);
+  font-weight: 700;
 }
 
 .quiz-progress-track {
@@ -1128,9 +1170,11 @@ img, svg {
 
 .quiz-option-btn.selected {
   background-color: var(--color-copper-light);
-  border-color: var(--color-copper);
+  border-color: var(--color-copper-dark);
   border-width: 2px;
-  padding: calc(1rem - 1px) calc(1.15rem - 1px);
+  border-left: 5px solid var(--color-copper);
+  padding: calc(1rem - 1px) calc(1.15rem - 1px) calc(1rem - 1px) calc(1.15rem - 4px);
+  box-shadow: 0 2px 8px rgba(16, 36, 62, 0.08);
 }
 
 .opt-label {
@@ -1142,7 +1186,7 @@ img, svg {
 }
 
 .quiz-option-btn.selected .opt-label {
-  color: var(--color-copper-dark);
+  color: var(--color-navy-dark);
 }
 
 .opt-detail {
@@ -1735,7 +1779,8 @@ img, svg {
 }
 
 .required-star {
-  color: var(--color-copper);
+  color: var(--color-copper-dark);
+  font-weight: 700;
 }
 
 .form-input,
@@ -2178,3 +2223,132 @@ img, svg {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* ==========================================================================
+   16. ACCESSIBILITY & GRAYSCALE CONTRAST SYSTEM
+   ========================================================================== */
+
+/* 100% Grayscale Contrast Emulation Mode */
+body.grayscale-mode {
+  filter: grayscale(100%);
+}
+
+/* Structural & Hierarchy Reinforcement in Grayscale */
+body.grayscale-mode .btn-copper {
+  background-color: #383838;
+  color: #FFFFFF;
+  border: 1px solid #1A1A1A;
+}
+
+body.grayscale-mode .btn-copper:hover {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+}
+
+body.grayscale-mode .btn-copper .btn-subtext {
+  color: #E2E2E2;
+}
+
+body.grayscale-mode .service-card-primary {
+  border: 3px solid #111111;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+body.grayscale-mode .service-card-badge {
+  background-color: #111111;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+body.grayscale-mode .quiz-option-btn.selected {
+  border-color: #111111;
+  border-left: 6px solid #111111;
+  background-color: #ECECEC;
+}
+
+.a11y-toggle {
+  display: none;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.75rem;
+  background-color: var(--color-paper-light);
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  color: var(--color-slate-dark);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .a11y-toggle {
+    display: inline-flex;
+  }
+}
+
+.a11y-toggle:hover,
+.a11y-toggle.active {
+  background-color: var(--color-paper-alt);
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+}
+
+.a11y-toggle svg {
+  color: var(--color-copper);
+}
+
+.mobile-a11y-wrapper {
+  padding-top: 1rem;
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.mobile-a11y-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  min-height: 44px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  border: 1px solid var(--color-border-dark);
+  background-color: var(--color-paper);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mobile-a11y-btn:hover,
+.mobile-a11y-btn.active {
+  background-color: var(--color-paper-alt);
+  border-color: var(--color-navy);
+  color: var(--color-navy);
+}
+
+.footer-a11y-btn {
+  background: transparent;
+  border: 1px solid var(--color-slate-light);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: all 0.15s ease;
+}
+
+.footer-a11y-btn:hover,
+.footer-a11y-btn.active {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+

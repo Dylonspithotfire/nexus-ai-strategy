@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- ACCESSIBILITY: SKIP TO CONTENT -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
   <!-- HEADER & NAVIGATION -->
   <header class="site-header" id="top">
     <div class="nav-container">
@@ -48,6 +51,14 @@
       </nav>
 
       <div class="nav-actions">
+        <!-- Accessibility Grayscale Mode Toggle -->
+        <button type="button" class="a11y-toggle" id="grayscale-toggle-btn" aria-pressed="false" title="Toggle 100% Grayscale View (Accessibility Contrast Check)">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a10 10 0 0 1 0 20z" fill="currentColor"/>
+          </svg>
+          <span class="a11y-toggle-text">B&amp;W Mode</span>
+        </button>
         <a href="#contact" class="btn btn-copper btn-sm nav-cta" id="nav-book-btn">Book the Audit</a>
         <!-- Mobile Menu Toggle Button -->
         <button type="button" class="mobile-toggle" id="mobile-toggle-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
@@ -73,6 +84,15 @@
         </ul>
         <div class="mobile-nav-cta-wrapper">
           <a href="#contact" class="btn btn-copper btn-block mobile-nav-link" id="mobile-book-audit-link">Book the Audit ($3,500)</a>
+        </div>
+        <div class="mobile-a11y-wrapper">
+          <button type="button" class="btn btn-outline mobile-a11y-btn" id="mobile-grayscale-toggle-btn" aria-pressed="false">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 2a10 10 0 0 1 0 20z" fill="currentColor"/>
+            </svg>
+            <span>B&amp;W Accessibility Mode</span>
+          </button>
         </div>
       </div>
     </nav>
@@ -572,7 +592,7 @@
                 <h3 class="quiz-q-title">2. Where is your team burning the most manual operational hours?</h3>
                 <p class="quiz-q-hint">Identify your single largest daily workflow bottleneck:</p>
                 <div class="quiz-options-grid">
-                  <button type="button" class="quiz-option-btn" data-value="carrier-invoice" data-focus="Carrier Rate & Invoice Reconciliation">
+                  <button type="button" class="quiz-option-btn" data-value="carrier-invoice" data-focus="Carrier Rate & Invoice Reconciliation Agent">
                     <span class="opt-label">Carrier Invoice & Accessorial Reconciliation</span>
                     <span class="opt-detail">Matching invoices against rate cons, fighting lumper & detention charges manually</span>
                   </button>
@@ -812,7 +832,7 @@
               <!-- Explicit Disclaimer Notice -->
               <div class="estimator-note">
                 <p>
-                  <strong>Pragmatic Planning Note:</strong> This calculation is an estimate derived strictly from your entered operational inputs <em>(Hours Saved/Week × Hourly Rate × 52)</em>. It represents operational capacity reallocation rather than cash-in-hand guarantees. Actual baseline capture rates are rigorously validated during the on-site or remote AI Readiness Audit.
+                  <strong>Pragmatic Planning Note:</strong> Estimate derived strictly from your entered operational parameters <em>(Hours Saved/Week × Hourly Rate × 52)</em>. Real-world ROI is confirmed during the formal AI Readiness Audit and is never guaranteed in advance. It represents operational capacity reallocation rather than speculative cash guarantees.
                 </p>
               </div>
             </div>
@@ -1199,6 +1219,8 @@
         </div>
         <div class="footer-secondary-links">
           <a href="#fit">Engagement Criteria</a>
+          <span class="footer-dot">&bull;</span>
+          <button type="button" class="footer-a11y-btn" id="footer-grayscale-toggle-btn" aria-pressed="false">Toggle B&amp;W Contrast Mode</button>
           <span class="footer-dot">&bull;</span>
           <a href="#top">Back to Top &uarr;</a>
         </div>
